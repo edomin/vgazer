@@ -20,7 +20,7 @@ commands:
 - version - check versions of software
 - install - install software
 
-**target** (optional) - target platform for installation software and versions 
+**target** (optional) - target platform for installation software and versions
 checking. Default - host platform
 
 software - space separated list of software must be installed or version
@@ -59,8 +59,7 @@ and OS's version of base Docker image. Currently supported:
 * amazonlinux
     * 2
 * fedora
-    * 40
-    * 41
+    * 43
 
 **tarch** - architecture of device for crossplatform compiling libraries.
 Currently supported:
@@ -70,12 +69,10 @@ Currently supported:
 **tos** - generic name of target's OS. Currently supported:
 
 * linux
-* windows (WIP)
 
 **tabi** - target's ABI. Currently supported:
 
 * gnu
-* mingw32 (WIP)
 
 **arch**, **os** and **ver** - same as **harch**, **hos** and **hver** in that
 cases when not used target platform parameters such as **tarch**, **tos** and
