@@ -250,4 +250,26 @@ data = {
             },
         ],
     },
+    "libxrandr": {
+        "platform": "target",
+        "projects": [
+            # TODO(edomin): Fallback
+            {
+                "arch": ["any"],
+                "os": ["fedora"],
+                "osVersion": ["43"],
+                "abi": ["gnu"],
+                "license": ["hpnd-sv"],
+                "changelog": "https://gitlab.freedesktop.org/xorg/lib/libxrandr/-/tags",
+                "checker": {
+                    "type": "dnf",
+                    "package": "libXrandr-devel",
+                },
+                "installer": {
+                    "type": "dnf",
+                    "package": "libXrandr-devel",
+                },
+            },
+        ],
+    },
 }
